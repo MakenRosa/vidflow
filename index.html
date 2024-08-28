@@ -14,7 +14,7 @@
 <body>
     <header class="cabecalho">
         <div class="cabecalho__logo">
-            <img src="./img/modo_claro/vidflow-logo-light-mode.png" alt="Página inicial do VidFlow">
+            <img id="logo" src="./img/modo_claro/vidflow-logo-light-mode.png" alt="Página inicial do VidFlow">
         </div>
 
         <div class="cabecalho__pesquisa-container">
@@ -159,14 +159,14 @@
                     </a>
                 </li>
 
-                <li class="menu-lateral__canal colapsado">
+                <li class="menu-lateral__canal menu-lateral__canal--colapsado">
                     <a class="menu-lateral__item" href="#">
                         <i class="menu-lateral__icone-nerd"></i>
                         <span>Jovem Nerd</span>
                     </a>
                 </li>
 
-                <li class="menu-lateral__canal colapsado">
+                <li class="menu-lateral__canal menu-lateral__canal--colapsado">
                     <a class="menu-lateral__item" href="#">
                         <i class="menu-lateral__icone-deschamps"></i>
                         <span>Felipe Deschamps</span>
@@ -264,6 +264,12 @@
                 <button class="newsletter__botao-inscrever">Inscrever</button>
             </div>
         </form>
+        <dialog class="modal" id="modal">
+            <img src="./img/success.png" alt="Sucesso" class="modal__imagem">
+            <p class="modal__texto">E-mail cadastrado com sucesso!</p>
+            <button class="modal__botao" id="fechar-modal">Ok</button>
+        </dialog>
+        
 
         <ul class="videos-container">
 

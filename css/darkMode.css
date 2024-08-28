@@ -1,0 +1,156 @@
+/* Correção do Modo Escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Navbar e Imagens */
+body.dark-mode .cabecalho {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+body.dark-mode .cabecalho__input-pesquisa {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark-mode .cabecalho__links a.cabecalho__avatar {
+  filter: none; 
+}
+
+body.dark-mode .cabecalho__videos {
+  background-image: url("../img/modo_escuro/menu_superior/video_call.svg");
+}
+
+body.dark-mode .cabecalho__apps {
+  background-image: url("../img/modo_escuro/menu_superior/apps.svg");
+}
+
+body.dark-mode .cabecalho__notificacoes {
+  background-image: url("../img/modo_escuro/menu_superior/notifications.svg");
+}
+
+body.dark-mode .cabecalho__avatar {
+  background-image: url("../img/modo_escuro/menu_superior/Avatar.png");
+}
+
+/* Sidebar e Ícones */
+body.dark-mode .menu-lateral {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+body.dark-mode .menu-lateral__item {
+  color: #e0e0e0;
+}
+
+body.dark-mode .menu-lateral__secao-titulo {
+  color: #e0e0e0;
+}
+
+body.dark-mode .menu-lateral__icone-inicio::before {
+  content: url("../img/modo_claro/menu_lateral/home.svg")
+}
+
+body.dark-mode .menu-lateral__icone-explorar::before {
+  content: url("../img/modo_claro/menu_lateral/explore.svg");
+}
+
+body.dark-mode .menu-lateral__icone-shorts::before {
+  content: url("../img/modo_claro/menu_lateral/airplay.svg");
+}
+
+body.dark-mode .menu-lateral__icone-inscricoes::before {
+  content: url("../img/modo_claro/menu_lateral/subscriptions.svg");
+}
+
+body.dark-mode .menu-lateral__icone-biblioteca::before {
+  content: url("../img/modo_claro/menu_lateral/video_library.svg");
+}
+
+body.dark-mode .menu-lateral__icone-historico::before {
+  content: url("../img/modo_claro/menu_lateral/history.svg");
+}
+
+body.dark-mode .menu-lateral__icone-relogio::before {
+  content: url("../img/modo_claro/menu_lateral/history_toggle_off.svg");
+}
+
+body.dark-mode .menu-lateral__icone-like::before {
+  content: url("../img/modo_claro/menu_lateral/thumb_up_alt.svg");
+}
+
+body.dark-mode .menu-lateral__icone-alternar-canais::before {
+  content: url("../img/modo_claro/menu_lateral/keyboard_arrow_down.svg");
+}
+
+body.dark-mode .menu-lateral__icone-videos::before {
+  content: url("../img/modo_claro/menu_lateral/ondemand_video.svg");
+}
+
+body.dark-mode .menu-lateral__icone-filmes::before {
+  content: url("../img/modo_claro/menu_lateral/movie.svg");
+}
+
+body.dark-mode .menu-lateral__icone-jogos::before {
+  content: url("../img/modo_claro/menu_lateral/sports_esports.svg");
+}
+
+
+/* Barra dos Botões de Categoria */
+body.dark-mode .secao-categorias {
+  background-color: #1c1c1c; /* Estilo para a barra dos botões */
+}
+
+body.dark-mode .secao-categorias__botao {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .secao-categorias__botao.selecionado {
+  background-color: #555;
+}
+
+/* Newsletter */
+body.dark-mode .newsletter {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+body.dark-mode .newsletter__inscreva-se {
+  color: #e0e0e0; /* Corrige a cor do texto "Inscreva-se para saber as novidades!" */
+}
+
+body.dark-mode .newsletter__input {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark-mode .newsletter__botao-inscrever {
+  background-color: #444;
+  color: #e0e0e0;
+}
+
+/* Remover a inversão das imagens gerais */
+body.dark-mode img {
+  filter: none; /* Remove o filtro invert de todas as imagens por padrão */
+}
+
+/* Aplicar inversão de cores apenas onde necessário */
+body.dark-mode .menu-lateral__icone-inicio,
+body.dark-mode .menu-lateral__icone-explorar,
+body.dark-mode .menu-lateral__icone-shorts,
+body.dark-mode .menu-lateral__icone-inscricoes,
+body.dark-mode .menu-lateral__icone-biblioteca,
+body.dark-mode .menu-lateral__icone-historico,
+body.dark-mode .menu-lateral__icone-relogio,
+body.dark-mode .menu-lateral__icone-like,
+body.dark-mode .menu-lateral__icone-alternar-canais,
+body.dark-mode .menu-lateral__icone-videos,
+body.dark-mode .menu-lateral__icone-filmes,
+body.dark-mode .menu-lateral__icone-jogos {
+  filter: invert(100%); /* Aplicar inversão de cor apenas nos ícones específicos */
+}

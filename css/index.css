@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./cabecalho.css");
 @import url("./menu-lateral.css");
+@import url("./darkMode.css");
 
 *,
 *::before,
@@ -44,4 +45,46 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-background-color: #f1f1f1;
+    --input-background-color: #e0e0e0;
+    --button-background-color: #d0d0d0;
+    --link-color: #1a0dab;
+    --icon-color: #000000; 
+}
+
+body.dark-mode {
+    --background-color: #181818;
+    --text-color: #e0e0e0;
+    --header-background-color: #282828;
+    --input-background-color: #383838;
+    --button-background-color: #484848;
+    --link-color: #8ab4f8;
+    --icon-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.cabecalho {
+    background-color: var(--header-background-color);
+}
+
+.cabecalho__input-pesquisa {
+    background-color: var(--input-background-color);
+    color: var(--text-color);
+}
+
+.cabecalho__botao-pesquisa {
+    background-color: var(--button-background-color);
+}
+
+.cabecalho__links a {
+    color: var(--link-color);
 }
